@@ -1,0 +1,8 @@
+@media (max-width: 1010px) {
+	main > section.list {
+		grid-template-columns: auto auto auto;
+	}
+}
+@media (max-width: 768px) {
+	
+}
