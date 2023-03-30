@@ -4,5 +4,21 @@
 	}
 }
 @media (max-width: 768px) {
-	
+	header {
+		height: 4.5rem;
+	}	
+	main > section.list {
+		grid-template-columns: auto auto;
+	}
+	main > section {
+		font-size: 0.9rem;
+	}
+	footer {
+		height: 2.5rem;
+	}
+}
+@media (max-width: 500px) {
+	main > section.list {
+		grid-template-columns: auto;
+	}
 }
