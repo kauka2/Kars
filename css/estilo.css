@@ -4,90 +4,108 @@
     padding: 0;
     outline: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Fjord';
     font-weight: 400;
 }
 :root {
-    --primary: blue;
-    --secondary: red;
-    --secondary-ligth: green;
-    --third: yellow;
-    --third-light: grey;
+    --primary: #202020;
+    --secondary: #E0E0E0;
+    --third: #FF0000;
     --black: black;
     --white: white;
 }
-/* Cabeçalho */
-header {
-    border-bottom: 0.4 solid var(--third);
-    display: flex;
-    height: 6rem;
+
+body{
+    background-color: white;
 }
-header picture {
-    margin-left: 0.5rem;
-    padding: 0.5rem;
+
+header {
+    border-bottom: 0.5 solid var(--primary);
+    display: flex;
+    background-color: white;
 }
 header picture img {
-    height: 100%;
+    height: 5rem;
+    align-items: flex-end;
 }
-/* Navegação */
 header nav {
     display: flex;
-    align-items: center;
     width: 100%;
-    justify-content: right;
+    justify-content: flex-end;
 }
 header nav ul {
     list-style-type: none;
     display: flex;
     align-items: center;
-    height: 100%;
 }
 header nav ul li {
-    padding: 1rem;
-    height: 100%;
-    display: flex;
-    align-items: center;
+    margin: 0 1.5rem;
 }
 header nav ul li a {
     text-decoration: none;
-    color: var(--black);
+    font-size: 1.2rem;
+    color: black;
 }
-header nav ul li:hover {
-    background-color: var(--secondary-ligth);
+
+main h1{
+    font-family: "Fjord";
+    font-size: 45px;
+    color: black;
+    text-decoration:none;
+    text-align:center;
 }
-/* Principlal */
-main {
-    min-height: calc(100vh - 9rem);
+main section list{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
 }
-main section {
-    display: flex;
-    max-width: 1090px;
-    margin: 0 auto;
+main picture.main img{
+    width: 33%;
+    height: 33%;
+    align-items: center;
+}
+main picture.main img.foxbody{
+    margin: 0rem;
 }
 main section.img img {
     width: 50%;
 }
-/* Listar */
-main section.list {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 1rem;
-}
 main section.list aside {
-    background-color: var(--third-light);
+    background-color: var(--secondary);
     border-radius: 1rem;
     padding: 1rem;
     line-height: 2rem;
+    align-items: center;
+    color: black;
 }
 main section.list aside h3 strong{
     font-weight: bold;
+    color: black;
 }
-/* Rodapé */
+main a {
+    color: black;
+}
+
 footer {
-    background-color: var(--third);
     height: 3rem;
+    display: flex;
+    border-bottom: 4rem solid var(--primary);
 }
-footer img {
+footer div {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+.content {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+footer.content div{
+    width: 100%;
     height: 100%;
-    padding: 0.4rem;
+}
+footer div a img {
+    width: 55px;
+    height: 20%;
 }
